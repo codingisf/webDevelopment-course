@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day - 11</title>
+  </head>
+  <body>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+
+      .box {
+        min-height: 150px;
+        min-width:150px;
+      }
+
+      .container {
+            display: grid;
+            width: fit-content;
+            border:5px solid #000;
+           grid-template-columns: 1fr 1fr 1fr;
+
+ /* 
+            grid-template-rows: 1fr 2fr 1fr; */
+
+            /* grid-template: 1fr 2fr 1fr / repeat(3,1fr); */
+            /* column-gap: 5px; */
+      }
+
+      .red{
+        grid-column: span 2;
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        /* grid-area:header; */
+      }
+      .green{
+        grid-row: span 2;
+      }
+
+
+    </style>
+
+    <div class="container">
+      <div class="box red" style="background-color: red"></div>
+
+      <div class="box green" style="background-color: green"></div>
+      <div class="box" style="background-color: yellow"></div>
+      <div class="box" style="background-color: blue"></div>
+      <div class="box" style="background-color: pink"></div>
+      <div class="box" style="background-color: teal"></div>
+      <div class="box" style="background-color: tomato"></div>
+      <div class="box" style="background-color: limegreen"></div>
+      <div class="box" style="background-color: orange"></div>
+      
+    </div>
+  </body>
+</html>
