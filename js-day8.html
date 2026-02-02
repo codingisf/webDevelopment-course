@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- https://screenrec.com/share/Gyuawcdq1J -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <input type="text" id="input" value="hello world"/>
+    
+    
+    <button onclick="changeColor()">Change color</button>
+
+    <p id="text" style="color:red;"></p>
+
+
+    <!-- <p>
+      <b>
+        hello
+      </b>
+    </p> -->
+
+    <!-- <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>sdf</li>
+      <li>asfd</li>
+      <li>daf</li>
+  
+    </ul> -->
+
+
+
+
+
+    <!-- Script -->
+    <script>
+       const a = document.getElementById('text');
+       const input = document.getElementById('input');
+      //   a.innerText = "Its replaced by JS";
+
+      //  const a = document.querySelectorAll('li');
+      //  console.log(a);
+
+      // a.innerHTML = "<b>Hello</b>";
+      // a.style.color="green";
+      // a.style.textDecoration = "underline";
+      // a.addEventListener('click',()=>{a.style.color="green";})
+
+      // console.log(a);
+      // console.log(input.value);
+      
+
+      const changeColor = () =>{
+          a.innerText=input.value;
+          input.value="";
+      }
+
+
+       
+    </script>
+  </body>
+</html>
